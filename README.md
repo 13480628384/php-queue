@@ -5,7 +5,6 @@ PHP开发的磁盘存储消息队列服务，基于leveldb和swoole，在4核机
 * php-leveldb: <https://github.com/reeze/php-leveldb>
 * swoole: <https://github.com/swoole/swoole-src>
 
-
 安装
 ----
 安装swoole和leveldb扩展，并下载源码
@@ -14,6 +13,8 @@ PHP开发的磁盘存储消息队列服务，基于leveldb和swoole，在4核机
 pecl install swoole 
 pecl install leveldb
 ```
+
+> 程序使用了客户端EOF分包，需要swoole-1.7.17以上版本
 
 运行
 ----
